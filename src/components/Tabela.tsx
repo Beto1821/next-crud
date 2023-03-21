@@ -40,21 +40,21 @@ export default function Tabela(props: TabelaProps) {
         return (
             <td className="flex justify-center">
                 {props.clienteSelecionado ? (
-                <button onClick={() => props.clienteSelecionado?.(cliente)} className={`
-                flex justify-center items-center text-green-600
-                rounded-full hover:bg-purple-50 p-2 m-1
-                `}>
-                    {IconeEdicao}
-                </button>
+                    <button onClick={() => props.clienteSelecionado?.(cliente)} className={`
+                        flex justify-center items-center text-green-600
+                        rounded-full hover:bg-purple-50 p-2 m-1
+                    `}>
+                        {IconeEdicao}
+                    </button>
                 ) : false }
                 {props.clienteExcluido ? (
-                <button className={`
-                flex justify-center items-center text-red-500
-                rounded-full hover:bg-purple-50 p-2 m-1 
-                `}>
-                    {IconeTrash}
-                </button>
-                ) : false}
+                    <button onClick={() => props.clienteExcluido?.(cliente)} className={`
+                        flex justify-center items-center text-red-500
+                        rounded-full hover:bg-purple-50 p-2 m-1 
+                    `}>
+                        {IconeTrash}
+                    </button>
+                ) : false }
             </td>
         )
     }
