@@ -33,7 +33,7 @@ export default function Formulario(props: FormularioProps) {
                 texto="Idade" 
                 valor={idade} 
                 tipo="number"
-                valorMudou={setNome}
+                valorMudou={setIdade}
             />
             <div className="flex justify-end mt-7">
                 <Botao 
